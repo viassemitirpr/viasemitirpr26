@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Informações Cadastrais – CNPJ</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body { font-family: Arial, sans-serif; background:#111; color:#eee; margin:0 }
+header { background:#000; padding:25px; text-align:center }
+nav { background:#0a0a0a; padding:12px; text-align:center; position:sticky; top:0 }
+nav a, nav button {
+  color:#0f0; margin:0 10px; text-decoration:none;
+  background:none; border:1px solid #0f0; padding:6px 10px; cursor:pointer
+}
+section { padding:25px; border-bottom:1px solid #333 }
+.card { background:#1c1c1c; padding:18px; margin:15px 0; border-radius:6px }
+h2 { color:#0f0 }
+small { color:#aaa }
+iframe { width:100%; height:300px; border:0 }
+footer { padding:20px; text-align:center; font-size:13px }
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>Consulta Cadastral – Pessoa Jurídica</h1>
+  <small>Dados públicos para fins informativos</small>
+</header>
+
+<nav>
+  <a href="#registro">Registro</a>
+  <a href="#contato">Contatos</a>
+  <a href="#localizacao">Localização</a>
+  <button onclick="window.print()">Baixar PDF</button>
+</nav>
+
+<section id="registro">
+  <div class="card">
+    <h2>Informações de Registro</h2>
+    <p><b>CNPJ:</b> 04.446.606/0005-30</p>
+    <p><b>Razão Social:</b> Rs Construcoes e Empreendimentos Imobiliarios Ltda.</p>
+    <p><b>Tipo:</b> Filial</p>
+    <p><b>Data de Abertura:</b> 24/09/2024</p>
+    <p><b>Situação:</b> Ativa</p>
+    <p><b>Data da Situação Cadastral:</b> 24/09/2024</p>
+    <p><b>Natureza Jurídica:</b> Sociedade Empresária Limitada</p>
+    <p><b>Porte:</b> Sem Enquadramento</p>
+    <p><b>Capital Social:</b> R$ 2.200.000,00</p>
+  </div>
+</section>
+
+<section id="contato">
+  <div class="card">
+    <h2>Contatos</h2>
+    <p><b>E-mail:</b> cobranca@rsconstrucoes.com</p>
+    <p><b>Telefone:</b> (11) 4583-1574</p>
+  </div>
+</section>
+
+<section id="localizacao">
+  <div class="card">
+    <h2>Endereço</h2>
+    <p>Avenida Inacio Furtado, SN</p>
+    <p>Centro – Barcarena / PA</p>
+    <p>CEP: 68447-000</p>
+  </div>
+
+  <div class="card">
+    <h2>Mapa</h2>
+    <iframe 
+      src="https://www.google.com/maps?q=Avenida+Inacio+Furtado+Barcarena+PA&output=embed"
+      loading="lazy">
+    </iframe>
+  </div>
+
+  <div class="card">
+    <h2>Correspondência</h2>
+    <p>Rs Construcoes e Empreendimentos Imobiliarios Ltda.</p>
+    <p>Avenida Inacio Furtado, SN</p>
+    <p>Centro – Barcarena / PA</p>
+    <p>CEP 68447-000</p>
+  </div>
+</section>
+
+<footer>
+  <small>
+    Aviso legal: esta página é meramente informativa, construída com base em dados públicos.
+    Não representa o site oficial da empresa nem estabelece vínculo comercial.
+  </small>
+</footer>
+
+</body>
+</html>
